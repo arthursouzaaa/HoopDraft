@@ -1,0 +1,13 @@
+appId: com.hoopdraft.app
+productName: HoopDraft
+directories:
+  output: dist-electron
+files:
+  - dist/**/*
+  - electron/**/*
+win:
+  target: nsis
+mac:
+  target: dmg
+linux:
+  target: AppImage

@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+
+body {
+  @apply bg-[#0B1220] text-slate-100 font-body antialiased;
+  background-image:
+    radial-gradient(1200px 600px at 20% -10%, rgba(29, 66, 138, 0.35), transparent),
+    radial-gradient(900px 500px at 100% 10%, rgba(200, 16, 46, 0.18), transparent);
+}
+
+.font-display {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 24px rgba(253, 185, 39, 0.35);
+  transition: box-shadow 0.2s;
+}
